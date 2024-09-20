@@ -307,7 +307,7 @@ nav ul li.active a {
         text-align: justify;
     }
     
-    .paragrafo img.imagem {
+    .paragrafo img {
         max-width: 100%; /* Ajusta o tamanho da imagem para caber na tela */
         height: auto;
         display: block;
