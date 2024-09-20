@@ -187,6 +187,13 @@ nav ul li.active a {
     text-decoration: underline;
 }
 @media screen and (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+    
     body {
         background-color: #ffffff;
         color: #333;
@@ -202,10 +209,12 @@ nav ul li.active a {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         position: relative;
         overflow: hidden;
+        height: auto; /* Ajuste para evitar cortes */
     }
     
+    /* Logo */
     header .logo img {
-        width: 100px; /* Ajuste para telas menores */
+        width: 80px; /* Tamanho reduzido */
     }
     
     /* Menu de navegação */
@@ -217,15 +226,15 @@ nav ul li.active a {
     }
     
     nav ul li {
-        margin-right: 15px; /* Ajuste menor para evitar excesso de espaço */
+        margin-right: 15px;
         position: relative;
     }
     
     nav ul li a {
         color: #fff;
         text-decoration: none;
-        font-size: 16px; /* Ajuste no tamanho da fonte */
-        padding: 10px 10px; /* Ajuste no padding */
+        font-size: 16px;
+        padding: 10px 10px;
         display: block;
         transition: color 0.3s, transform 0.3s;
         border-radius: 4px;
@@ -235,140 +244,5 @@ nav ul li.active a {
         color: #c9f0c1;
         transform: scale(1.1);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    nav ul li a::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        background-color: #c9f0c1;
-        left: 0;
-        bottom: 0;
-        transition: width 0.3s;
-    }
-    
-    nav ul li a:hover::after,
-    nav ul li.active a::after {
-        width: 100%;
-    }
-    
-    nav ul li.active a {
-        color: #c9f0c1;
-        font-weight: bold;
-    }
-    
-    /* Título */
-    .title h1 {
-        font-size: 7vw; /* Ajuste adaptável para telas menores */
-        color: #ffffff;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 3px;
-        margin-bottom: 20px;
-        padding: 15px;
-        background: #05461b;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .title h1::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -75%;
-        width: 50%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.2);
-        transform: skewX(-25deg);
-        transition: left 0.7s ease-in-out;
-    }
-    
-    .title h1:hover::before {
-        left: 125%;
-    }
-    
-    /* Texto secundário */
-    .title2 {
-        color: #fff;
-        background: #05461b;
-        text-align: center;
-        padding: 5px;
-        font-size: 4vw; /* Ajuste para telas menores */
-        width: 90vw;
-    }
-    
-    /* Parágrafo */
-    .paragrafo {
-        padding: 20px;
-        font-size: 4vw; /* Ajuste proporcional ao tamanho da tela */
-        margin: 0 auto;
-        text-align: justify;
-    }
-    
-    .paragrafo img {
-        max-width: 100%; /* Ajusta o tamanho da imagem para caber na tela */
-        height: auto;
-        display: block;
-        margin: 20px 0;
-    }
-    
-    /* Créditos */
-    .creditos {
-        padding: 10px;
-        font-size: 4vw; /* Ajuste para tamanho menor */
-        line-height: 1.6;
-        margin: 0 auto;
-        text-align: center;
-    }
-    
-    .creditos h1 {
-        font-size: 7vw; /* Ajuste para telas menores */
-        color: #ffffff;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 3px;
-        margin-bottom: 20px;
-        padding: 10px;
-        background: #05461b;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .creditos h1::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -75%;
-        width: 50%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.2);
-        transform: skewX(-25deg);
-        transition: left 0.7s ease-in-out;
-    }
-    
-    .creditos h1:hover::before {
-        left: 125%;
-    }
-    
-    /* Último parágrafo */
-    .ultimo p {
-        color: #05461b;
-        font-size: 4vw; /* Ajuste para telas menores */
-        padding: 15px;
-        line-height: 1.6;
-        text-decoration: underline;
-        text-align: center;
-    }
-    
-    /* Links adicionais */
-    .mais {
-        color: #05461b;
-        font-size: 4vw; /* Ajuste para telas menores */
-        padding: 10px;
-        line-height: 1.6;
-        text-decoration: underline;
     }
 }
