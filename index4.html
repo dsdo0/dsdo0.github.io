@@ -173,50 +173,72 @@
         }
 
         @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-            header h1 {
-                font-size: 1.6em;
-            }
+    nav ul {
+        flex-direction: column;
+    }
 
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-                width: 100%;
-            }
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
-            nav ul li {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
 
-            .menu-btn {
-                display: flex;
-                margin-top: 10px;
-            }
+    .title h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
 
-            nav {
-                display: none;
-                width: 100%;
-                background-color: #05461b;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                flex-direction: column;
-                align-items: center;
-                padding: 20px 0;
-                border-radius: 0 0 10px 10px;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            }
+    .paragrafo {
+        padding: 20px;
+        font-size: 18px;
+    }
 
-            nav.active {
-                display: flex;
-            }
-        }
+    .creditos h1 {
+        font-size: 20px;
+    }
 
+    .ultimo p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .paragrafo {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .creditos h1 {
+        font-size: 18px;
+    }
+
+    .ultimo p {
+        font-size: 16px;
+    }
+}
     </style>
 </head>
 <body>
@@ -280,7 +302,7 @@
                 <li>Reutilização de brinquedos de plastico</li>
                 <li>Pequena caixa de papelão</li>
                 <li>Tintas</li>
-                <li>Pequenos galhos de árvores de canela</li>
+                <li>Pequenos galhos de árvores de cadela</li>
                 <li>Isopor reutilizados</li>
                 <li>Po de serra</li>
                 <li>Palito de churrasco</li>

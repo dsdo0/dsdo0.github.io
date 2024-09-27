@@ -8,6 +8,7 @@
 body {
     background-color: #ffffff;
     color: #333;
+
 }
 
 header {
@@ -125,8 +126,8 @@ nav ul li.active a {
     text-align:justify;
 }
 
-.paragrafo img.imagem {
-    max-width: 60%;
+.paragrafo img {
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 20px 0;
@@ -185,4 +186,71 @@ nav ul li.active a {
     padding: 20px;
     line-height: 1.6;
     text-decoration: underline;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .paragrafo {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .creditos h1 {
+        font-size: 20px;
+    }
+
+    .ultimo p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .paragrafo {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .creditos h1 {
+        font-size: 18px;
+    }
+
+    .ultimo p {
+        font-size: 16px;
+    }
 }

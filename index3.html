@@ -37,46 +37,72 @@
         }
 
         @media (max-width: 768px) {
-            header .logo img {
-                width: 80px;
-            }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-            header .menu-btn {
-                display: flex;
-            }
+    nav ul {
+        flex-direction: column;
+    }
 
-            nav {
-                display: none;
-                width: 100%;
-                background-color: #05461b;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                flex-direction: column;
-                align-items: center;
-                padding: 20px 0;
-            }
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
-            nav.active {
-                display: flex;
-            }
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
 
-            nav ul {
-                flex-direction: column;
-                width: 100%;
-                text-align: center;
-            }
+    .title h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
 
-            nav ul li {
-                margin-right: 25px;
-                margin-bottom: 10px;
-            }
+    .paragrafo {
+        padding: 20px;
+        font-size: 18px;
+    }
 
-            nav ul li a {
-                font-size: 16px;
-                padding: 8px 10px;
-            }
-        }
+    .creditos h1 {
+        font-size: 20px;
+    }
+
+    .ultimo p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .paragrafo {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .creditos h1 {
+        font-size: 18px;
+    }
+
+    .ultimo p {
+        font-size: 16px;
+    }
+}
 
     </style>
 </head>
